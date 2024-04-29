@@ -1,8 +1,10 @@
 #!/bin/bash
+termux-setup-storage
 pkg update -y && pkg upgrade -y && pkg install python -y && pkg install git -y && pkg install zip -y
 sleep 4
 clear
 python ts.py
+python sb.py
 RED='\033[0;31m'
 NC='\033[0m' # لا لون
 
@@ -95,6 +97,7 @@ echo "########################################################"
 echo "########################################################"
 
 echo "########################################################"
+python sb.py
 
 echo "                         please select namber :"
 
